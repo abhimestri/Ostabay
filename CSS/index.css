@@ -746,6 +746,7 @@ body{
         margin-top: 4vh;
     }
     .ListDisplayOfOrders{
+        width: 66vh;
         margin-top: 10vh;
     }
     .CountryFlagInList{
