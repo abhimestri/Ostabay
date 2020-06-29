@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="BodyPage">
+        <!-- main navigation/header bar -->
+        <div class="NavbarSection">
+            <nav class="="Navbar>
+                <div id="HamburgerIcon" class="Hamburger">
+                    <div class="EachLine"></div>
+                    <div class="EachLine"></div>
+                    <div class="EachLine"></div>
+                </div>
+                <ion-icon class="BackArrow" name="arrow-back-outline"></ion-icon>
+                <p class="NavbarText1">Country Master</p>
+                <p class="NavbarText2">Packaging</p>
+            </nav>
+        </div>
+        <!--   Hidden admin panel will get effect when hamburger effect is active -->
+        <aside class="AsideSectionForHamburger">
+                <ul class="AsideSectionListForHamburger">
+                    <li class="ListElement"><a class="ListElementLink" href="#">Default Currency</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Statutary Details</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Default Metrics</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">List of Ports</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Container Specifications</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Packaging</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Product preference</a></li>
+                </ul>
+        </aside>
+        <div class="MainSectionDiv">
+            <!-- active admin panel -->
+            <aside class="AsideSection">
+                <ul class="AsideSectionList">
+                    <li class="ListElement"><a class="ListElementLink" href="#">Default Currency</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Statutary Details</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Default Metrics</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">List of Ports</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Container Specifications</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#" >Packaging</a></li>
+                    <li class="ListElement"><a class="ListElementLink" href="#">Product preference</a></li>
+                </ul>
+            </aside>
+            <!-- Container to display Packages  -->
+            <div class="Container">
+                <div class="MainSection">
+                    <div class="MainSectionDisplay">
+                        <div class="SubNavbar">
+                            <p class="SubNavbarText">Packaging</p>
+                            <div class="SubNavbarAttributes">
+                                <ion-icon class="searchIcon" name="search-outline"></ion-icon>
+                                <input class="SearchInput" onclick="IconDisplayNone()" type="text" placeholder="Search..."/>
+                                <ion-icon class="CloudDownloadIcon" name="cloud-download-outline"></ion-icon>
+                                <ion-icon class="CloudUploadIcon" name="cloud-upload-outline"></ion-icon>
+                                <div class="Option1">
+                                    <div class="EachLineForOption1"></div>
+                                    <div class="EachLineForOption1"></div>
+                                    <div class="EachLineForOption1"></div>
+                                </div>
+                                <div class="Option2">
+                                    <div class="Line1ForOption2"></div>
+                                    <div class="Line2ForOption2"></div>
+                                    <div class="Line3ForOption2"></div>
+                                </div>
+                                <button class="AddItemsButton"><span class="AddIcon">+</span>Add New</button>
+                            </div>
+                        </div>
+                        <div class="List-Specification">
+                            <p class="Country">Country name</p>
+                            <p class="Continent">Continent</p>
+                            <p class="Category">Category</p>
+                            <p class="Packaging">Packaging</p>
+                        </div>
+                        <!-- List Of packages been added -->
+                        <div class="ListDisplayOfOrders">
+                            <ul class="ListElements"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hidden sidedrawer to add new package  -->
+        <div class="SideDrawerForAddNew">
+            <p class="AddPackage">Add Packaging</p>
+                <p class="InputLabel" for="Country">Country</p>
+                <select id="InputElement" class="InputElementCountry" name="Country">
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="USA">USA</option>
+                </select>
+
+                <p class="InputLabel" for="Category">Category</p>
+                <select id="InputElement" class="InputElementCategory">
+                    <option value="Natural Stones">Natural Stones</option>
+                    <option value="Artificial Stones">Artificial Stones</option>
+                </select>
+
+                <p class="InputLabel" for="Sub-Category">Sub-Category</p>
+                <select id="InputElement" class="InputElementSubCategory">
+                    <option value="Granite">Granite</option>
+                    <option value="Ceramic">Ceramic</option>
+                    <option value="Stone">Stone</option>
+                </select>
+            
+            <p class="PackagingOption">Packaging Options</p>
+            <div class="RadioBtnForPackageOption">
+                <input class="InputRadioCheck" id="InputLooseStuffingOption" type="checkbox" value ="Loose Stuffing" name="Loose Stuffing" >
+                <p class="LabelForInputRadioCheck" for="Loose Stuffing">Loose Stuffing</p><br>
+                <input class="InputRadioCheck" id="InputWoodenCratingOption" type="checkbox" value ="Wooden Crating" name="Wooden Crating" >
+                <p class="LabelForInputRadioCheck" for="Wooden Crating">Wooden Crating</p><br>
+            </div>
+            <div class="LowerButtonHandlingSection">
+                <p class="CancleBtn1">cancel</p>
+                <button class="Addbtn">Add</button>
+            </div>
+        </div>
+
+        <!-- Dynamic hidden side drawer to Edit a particular package -->
+        <div class="SideDrawerForEdit"></div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="../Javascript/index.js"></script>
+</body>
+</html>
