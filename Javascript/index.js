@@ -47,7 +47,7 @@ document.querySelector(".Addbtn").addEventListener('click',function(){
         subData = " > " + Data.subcategory
     }
     outPut = `<div id=${Data.Id} class="EachListOfOrders">
-                            <img class="CountryFlagInList" src="../Assets/${Data.country}.jpg">
+                            <img class="CountryFlagInList" src="Assets/${Data.country}.jpg">
                             <p class="CountryEach">${Data.country}</p>
                             <p  class="ContinentEach">Asia</p>
                             <p id="CategoryAdding${Data.Id}" class="CategoryEach">${Data.category}${subData}</p>
@@ -83,7 +83,7 @@ function SideDrawerToEdit(Id){
     let SideDrawerContentAppend = `<div>
             <p class="EditPackageText">Edit Packaging</p>
             <p id="InputElementForEditCountry${id}" class="EditPackageCountry">
-            <img class="CountryLogo" src="../Assets/${Data.country}.jpg"/>${CountryName}</p>
+            <img class="CountryLogo" src="Assets/${CountryName}.jpg"/>${CountryName}</p>
             <p class="InputLabel" for="Category">Category</p>
                 <select id="InputElementForEditCategory" class="InputElementCategory">
                     <option value="Natural Stones">Natural Stones</option>
