@@ -86,9 +86,21 @@ body{
         left: calc(21% - 97px/2);
     }
 }
+@media(max-width:500px){
+    .Hamburger{
+        margin: 0 0 0 10px;
+    }
+    .NavbarText1{
+        top: calc(2% - 20px/2);
+        left: calc(32% - 97px/2);
+    }
+    .NavbarText2{
+        top: calc(4% - 28px/2);
+        left: calc(32% - 97px/2);
+    }
+}
 @media(max-width:360px){
     .Hamburger{
-        top: 3.5%;
         margin: 0 0 0 10px;
     }
     .NavbarText1{
@@ -100,7 +112,6 @@ body{
         left: calc(49% - 97px/2);
     }
 }
-
 
 /*---------*/
 
@@ -169,6 +180,11 @@ body{
         display: none;
     }
 }
+@media(max-width:500px){
+    .AsideSectionForHamburger{
+        left: -55%;
+    }
+}
 @media(max-width:360px){
     .AsideSectionForHamburger{
         left: -70%;
@@ -235,6 +251,7 @@ body{
     line-height: 24px;
     color: #8391A7;
     z-index: -1;
+    font-family: 'Maven Pro', sans-serif  ;
 }
 .searchIcon{
     font-size: 20px;
@@ -369,6 +386,69 @@ body{
     }
 }
 
+@media(max-width:500px){
+    
+    .MainSection{
+        width: 66vh;
+        left: 1.5%;
+    }
+    .SubNavbarText{
+        margin-top: 2px;
+        left: 3%;
+        font-size: 18px;
+    }
+    .SubNavbarAttributes{
+        position: absolute;
+        top: 20%;
+        width: 55vh;
+        display: flex;
+    }
+    .SearchInput{
+        width: 120px;
+        height: 25px;
+        left: -2%;
+    }
+    ::placeholder{
+        padding-left: 10px;
+        padding-bottom: 1vh;
+        font-size: 13px;
+    }
+    .searchIcon{
+        left: 3%;
+        margin-top: 2.5vh;
+        font-size: 14px;
+    }
+    .CloudDownloadIcon{
+        font-size: 20px;
+        left: 2.5%;
+        margin-top: 18px;
+    }
+    .CloudUploadIcon{
+        font-size: 20px;
+        left: 7%;
+        margin-top: -7px;
+    }
+    .Option1{
+        width: 20px;
+        height: 20px;
+        left: 12%;
+        margin-top: 20px;
+    }
+    .Option2{
+        width: 20px;
+        height: 20px;
+        left: 17%;
+        margin-top: 20px;
+    }
+    .AddItemsButton{
+        width: 100px;
+        height: 37px;
+        left: 30%;
+        margin-top: 1vh;
+        font-size: 12px;
+        padding-top: -40px;
+    }
+}
 
 @media(max-width:360px){
     .MainSection{
@@ -480,6 +560,28 @@ body{
 }
 /*---------*/
 /* -- Packaging Attributes  responsiv --*/
+@media(max-width:500px){
+    .Country{
+        left: 3%;
+        margin-top: 6.5vh;
+        font-size: 13px;
+    }
+    .Continent{
+        left: 28%;
+        margin-top: 6.5vh;
+        font-size: 13px;
+    }
+    .Category{
+        left: 50%;
+        margin-top: 6.5vh;
+        font-size: 13px;
+    }
+    .Packaging{
+        left: 74%;
+        margin-top: 6.5vh;
+        font-size: 13px;
+    }
+}
 @media(max-width:360px){
     .Country{
         left: 3%;
@@ -639,6 +741,41 @@ body{
         margin-top: 3.5vh;
     }
 }
+@media(max-width:500px){
+    .List-Specification{
+        margin-top: 4vh;
+    }
+    .ListDisplayOfOrders{
+        margin-top: 10vh;
+    }
+    .CountryFlagInList{
+        top: 2%;
+        left: -1%;
+        width: 26px;
+        height: 26px;
+    }
+    .CountryEach{
+        left: 3%;
+        top: -13%;
+        font-size: 14px;
+    }
+    .ContinentEach{
+        left: 14%;
+        top: -13%;
+        font-size: 14px;
+    }
+    .CategoryEach{
+        left: 24%;
+        width: 100px;
+        top: -13%;
+        font-size: 14px;
+    }
+    .EachLinePackaging{
+        top: -15%;
+        left: 37%;
+        font-size: 14px;
+    }
+}
 @media(max-width:360px){
     .List-Specification{
         margin-top: 80px;
@@ -781,6 +918,19 @@ body{
 @media(max-width:768px){
     .SideDrawerForAddNew{
         left: 10%;
+    }
+}
+@media(max-width:500px){
+    .SideDrawerForAddNew{
+        left:9%;
+    }
+    #InputElement{
+        width: 400px;
+        height: 40px;
+        border-radius: 6px;
+    }
+    .Addbtn{
+        margin: 0vh 0 0 49vh;
     }
 }
 @media(max-width:360px){
@@ -927,10 +1077,22 @@ body{
         margin: 0 0 0 63vh;
     }
 }
-@media(max-width:360px){
+@media(max-width:500px){
     .SideDrawerForEdit{
         left: 1%;
     }
+    .InputElementCategory{
+        margin-left: 20px;
+        width: 450px;
+        height: 40px;
+        border-radius: 6px;
+    }
+    .Savebtn{
+        top: -1vh;
+        margin: 0 0 0 48vh;
+    }
+}
+@media(max-width:360px){
     .EditPackageText{
         font-size: 18px;
         margin: 40px 0 10px 15px;
@@ -944,8 +1106,6 @@ body{
     .InputElementCategory{
         margin-left: 10px;
         width: 320px;
-        height: 40px;
-        border-radius: 6px;
     }
     .deleteIcon{
         margin-top: 11vh;
