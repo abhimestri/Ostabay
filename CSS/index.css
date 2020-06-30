@@ -242,6 +242,7 @@ body{
     left: 22%;
     font-size: 18px;
     padding: 0 0 0 15px;
+    padding-left: 50px;
 }
 ::placeholder{
     font-family: 'Maven Pro', sans-serif;
