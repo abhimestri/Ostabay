@@ -168,11 +168,11 @@ function LinkActivationHamburger(id){
     console.log(id)
     let EachElement = [...document.querySelector(".AsideSectionListForHamburger").children]
     EachElement.map( (ele)=> {
-       if(id != EachElement.indexOf(ele)){
+       if(id != ("Hidden"+ EachElement.indexOf(ele))){
         document.getElementById(EachElement.indexOf(ele)).setAttribute('class' , 'ListElement')
        }
        else{
-        document.getElementById(id).setAttribute('class' , 'SelectedAsideElement')
+        document.getElementById("Hidden"+id).setAttribute('class' , 'SelectedAsideElement')
        }
    })    
 }
