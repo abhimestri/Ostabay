@@ -164,3 +164,28 @@ function DirectDeleteList(Id){
     let ListElement = document.getElementById(Id).parentElement;
     ListElement.textContent = ""
 }
+function LinkActivationHamburger(id){
+    console.log(id)
+    let EachElement = [...document.querySelector(".AsideSectionListForHamburger").children]
+    EachElement.map( (ele)=> {
+       if(id != EachElement.indexOf(ele)){
+        document.getElementById(EachElement.indexOf(ele)).setAttribute('class' , 'ListElement')
+       }
+       else{
+        document.getElementById(id).setAttribute('class' , 'SelectedAsideElement')
+       }
+   })    
+}
+function LinkActivation(id){
+    console.log(id)
+    let EachElementShown = [...document.querySelector(".AsideSectionList").children]
+    // console.log(EachElement)
+    EachElementShown.map( (ele)=> {
+        console.log(ele)
+       if(id == ("Shown" + EachElementShown.indexOf(ele))){
+        document.getElementById(id).setAttribute('class' , 'SelectedAsideElement')
+       }else{
+        document.getElementById("Shown" + EachElementShown.indexOf(ele)).setAttribute('class' , 'ListElement')
+       }
+   })    
+}

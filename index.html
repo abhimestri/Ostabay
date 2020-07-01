@@ -17,37 +17,37 @@
                     <div class="EachLine"></div>
                 </div>
                 <ion-icon class="BackArrow" name="arrow-back-outline"></ion-icon>
-                <p class="NavbarText1">Country Master</p>
+                <p class="NavbarText1" onclick="MyFun()" >Country Master</p>
                 <p class="NavbarText2">Packaging</p>
             </nav>
         </div>
         <!--   Hidden admin panel will get effect when hamburger effect is active -->
         <aside class="AsideSectionForHamburger">
                 <ul class="AsideSectionListForHamburger">
-                    <li class="ListElement"><a class="ListElementLink" href="#">Default Currency</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Statutary Details</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Default Metrics</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">List of Ports</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Container Specifications</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Packaging</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Product preference</a></li>
+                    <li class="ListElement" id="0" onclick="LinkActivationHamburger(id)"><a class="ListElementLink" href="#">Default Currency</a></li>
+                    <li class="ListElement" id="1" onclick="LinkActivationHamburger(id)"><a class="ListElementLink" href="#">Statutary Details</a></li>
+                    <li class="ListElement" id="2" onclick="LinkActivationHamburger(id)"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
+                    <li class="ListElement" id="3" onclick="LinkActivationHamburger(id)"><a class="ListElementLink" href="#">Default Metrics</a></li>
+                    <li class="ListElement" id="4" onclick="LinkActivationHamburger(id)"><a class="ListElementLink" href="#">List of Ports</a></li>
+                    <li class="ListElement" id="5" onclick="LinkActivationHamburger(id)"><a class="ListElementLink" href="#">Container Specifications</a></li>
+                    <li class="ListElement" id="6" onclick="LinkActivationHamburger(id)"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
+                    <li class="ListElement" id="7" onclick="LinkActivationHamburger(id)"><a class="ListElementLink" href="#">Packaging</a></li>
+                    <li class="ListElement" id="8" onclick="LinkActivationHamburger(id)"><a class="ListElementLink" href="#">Product preference</a></li>
                 </ul>
         </aside>
         <div class="MainSectionDiv">
             <!-- active admin panel -->
             <aside class="AsideSection">
                 <ul class="AsideSectionList">
-                    <li class="ListElement"><a class="ListElementLink" href="#">Default Currency</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Statutary Details</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Default Metrics</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">List of Ports</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Container Specifications</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#" >Packaging</a></li>
-                    <li class="ListElement"><a class="ListElementLink" href="#">Product preference</a></li>
+                    <li class="ListElement" id="Shown0" onclick="LinkActivation(id)"><a class="ListElementLink" href="#">Default Currency</a></li>
+                    <li class="ListElement" id="Shown1" onclick="LinkActivation(id)"><a class="ListElementLink" href="#">Statutary Details</a></li>
+                    <li class="ListElement" id="Shown2" onclick="LinkActivation(id)"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
+                    <li class="ListElement" id="Shown3" onclick="LinkActivation(id)"><a class="ListElementLink" href="#">Default Metrics</a></li>
+                    <li class="ListElement" id="Shown4" onclick="LinkActivation(id)"><a class="ListElementLink" href="#">List of Ports</a></li>
+                    <li class="ListElement" id="Shown5" onclick="LinkActivation(id)"><a class="ListElementLink" href="#">Container Specifications</a></li>
+                    <li class="ListElement" id="Shown6" onclick="LinkActivation(id)"><a class="ListElementLink" href="#">Vendor Pricing</a></li>
+                    <li class="ListElement" id="Shown7" onclick="LinkActivation(id)"><a class="ListElementLink" href="#" >Packaging</a></li>
+                    <li class="ListElement" id="Shown8" onclick="LinkActivation(id)"><a class="ListElementLink" href="#">Product preference</a></li>
                 </ul>
             </aside>
             <!-- Container to display Packages  -->

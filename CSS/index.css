@@ -8,6 +8,7 @@ body{
     width: 100%;
     font-family: 'Maven Pro', sans-serif ;
 }
+
 .BodyPage{
     width: 100%;
     height: 100%;
@@ -199,6 +200,18 @@ body{
     cursor: pointer;
     list-style: none;
 }
+.SelectedAsideElement{
+    width: 220px;
+    height: 40px;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 13px;
+    left: -12%;
+    cursor: pointer;
+    list-style: none;
+    background-color: #151C32;
+    border-left: solid 6px blue;
+}
 .ListElementLink{
     margin: 18px 58px 10px 0px;
     text-decoration: none;
@@ -207,12 +220,6 @@ body{
     font-size: 14px;
     line-height: 20px;
     color: #8391A7;
-}
-.ListElement:hover{
-    width: 220px;
-    border-left: solid 6px blue;
-    border-radius: -10px;
-    background-color: #151C32;
 }
 /*---------*/
 /*-- Aside Section Responsivness -- */
@@ -424,6 +431,7 @@ body{
     .Container{
         width: 100vw;
         left: 1%;
+        overflow-x: hidden;
     }
     .MainSection{
         position: relative;
@@ -472,6 +480,7 @@ body{
     .Container{
         width: 100vw;
         left: 1%;
+        overflow-x: hidden;
     }
     .MainSection{
         width: 98vw;
@@ -495,6 +504,9 @@ body{
        
 }
 @media (max-width:414px){
+    .Container{
+        overflow-x: hidden;
+    }
     .MainSection{
         width: 94vw;
         left: 3%;
@@ -545,6 +557,9 @@ body{
     }
 } 
 @media(max-width:380px){
+    .Container{
+        overflow-x: hidden;
+    }
     .SearchInput{
         width: 100px;
         left: 58%;
@@ -560,6 +575,9 @@ body{
 }
 
 @media(max-width:360px){
+    .Container{
+        overflow-x: hidden;
+    }
     .SearchInput{
         width: 80px;
         left: 62%;
@@ -585,6 +603,11 @@ body{
     .CloudUploadIcon{
         left: 68%;
         font-size: 20px;
+    }
+}
+@media(max-width:350px){
+    .Container{
+        overflow-x: hidden;
     }
 }
 
