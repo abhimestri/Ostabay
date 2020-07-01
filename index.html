@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="BodyPage">
+    <div class="BodyPage" >
         <!-- main navigation/header bar -->
         <div class="NavbarSection">
             <nav class="="Navbar>
@@ -51,7 +51,7 @@
                 </ul>
             </aside>
             <!-- Container to display Packages  -->
-            <div class="Container">
+            <div class="Container" >
                 <div class="MainSection">
                     <div class="MainSectionDisplay">
                         <div class="SubNavbar">
@@ -71,7 +71,7 @@
                                     <div class="Line2ForOption2"></div>
                                     <div class="Line3ForOption2"></div>
                                 </div>
-                                <button class="AddItemsButton"><span class="AddIcon">+</span>Add New</button>
+                                <button class="AddItemsButton">+  Add New</button>
                             </div>
                         </div>
                         <div class="List-Specification">
@@ -82,20 +82,20 @@
                         </div>
                         <!-- List Of packages been added -->
                         <div class="ListDisplayOfOrders">
-                            <ul class="ListElements"></ul>
+                                <ul class="ListElements"></ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Hidden sidedrawer to add new package  -->
-        <div class="SideDrawerForAddNew">
+        <div class="SideDrawerForAddNew" id="SideDrawerForAddNewFeature">
             <p class="AddPackage">Add Packaging</p>
                 <p class="InputLabel" for="Country">Country</p>
                 <select id="InputElement" class="InputElementCountry" name="Country">
-                    <option value="India">India</option>
-                    <option value="China">China</option>
-                    <option value="USA">USA</option>
+                    <option id="CountryOption" value="India">India</option>
+                    <option id="CountryOption" value="China">China</option>
+                    <option id="CountryOption" value="USA">USA</option>
                 </select>
 
                 <p class="InputLabel" for="Category">Category</p>
@@ -125,7 +125,7 @@
         </div>
 
         <!-- Dynamic hidden side drawer to Edit a particular package -->
-        <div class="SideDrawerForEdit"></div>
+        <div class="SideDrawerForEdit" id="SideDrawerForEditFeature"></div>
     </div>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="Javascript/index.js"></script>

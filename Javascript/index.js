@@ -17,7 +17,7 @@ document.querySelector(".CancleBtn1").addEventListener('click' , function(){
 document.querySelector(".Hamburger").addEventListener('click',function() {
     let AsideSectionDisplay = document.querySelector(".AsideSectionForHamburger");
     if(AsideSectionDisplay.style.left == "0%"){
-        AsideSectionDisplay.style.left = "-67%"
+        AsideSectionDisplay.style.left = "-120%"
     }else{
     AsideSectionDisplay.style.left = "0%"
     }
@@ -164,5 +164,3 @@ function DirectDeleteList(Id){
     let ListElement = document.getElementById(Id).parentElement;
     ListElement.textContent = ""
 }
-
-
